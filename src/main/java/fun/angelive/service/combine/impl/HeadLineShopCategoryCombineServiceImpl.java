@@ -9,6 +9,7 @@ import fun.angelive.service.solo.IHeadLineService;
 import fun.angelive.service.solo.IShopCategoryService;
 import lombok.extern.slf4j.Slf4j;
 import org.simpleframework.core.annotation.Service;
+import org.simpleframework.inject.annotation.Autowired;
 
 import java.util.List;
 
@@ -20,8 +21,10 @@ import java.util.List;
 @Service
 public class HeadLineShopCategoryCombineServiceImpl implements IHeadLineShopCategoryCombineService {
 
+    @Autowired
     private IHeadLineService iHeadLineService;
 
+    @Autowired
     private IShopCategoryService iShopCategoryService;
 
     @Override
